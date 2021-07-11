@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br><br><br><br><br><br>
+    <!-- ======= Book A Table Section ======= -->
+<div class="section-title">
+<p>Personal Info:</p>
+ </div>
+
+  <form>
+    <label>Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Age Group:</label>
+    <input type="" name="age" required>
+
+      <label>Gender:</label>
+    <select name="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+
+      <label>Income per Month:</label>
+    <select name="income">
+      <option value="developer">20k to 50k</option>
+      <option value="designer">50k to 1L</option>
+      <option value="designer"> > 1L</option>
+    </select>
+
+      <label>Worktype:</label>
+    <select name="role">
+      <option value="Sedentary">Sedentary(Involing no physical activity)</option>
+      <option value="designer">Moderate Worker(Involving moderate physical activity)</option>
+      <option value="designer">Heavy Worker(Involving more physical activity)</option>
+<input type="submit" value="submit" width="320px">
+
+    </select>
+
+  </form>
+<div class="section-title">
+<p>How does you Look?:</p>
+ </div>
+ <form>
+    <label>Height:</label>
+    <input type="text" name="height" required>
+
+    <label>Weight:</label>
+    <input type="" name="weight" required>
+
+   <input type="submit" value="submit" width="320px">
+
+ </form>
+<div class="section-title">
+<p>Something more about you:</p>
+ </div>
+ <form>
+    <label>HBlevel:</label>
+    <input type="text" name="height" required>
+
+    <label>Glucoselevel:</label>
+    <input type="" name="weight" required>
+
+    <label>Bloodpressurelevel:</label>
+    <input type="" name="weight" required>
+ <input type="submit" value="submit" width="320px">
+ </form>
+<div class="section-title">
+<p>Do you suffer from any of these?</p>
+ </div>
+<form>
+    <label>Pailor:</label>
+    <input type="text" name="height" required>
+
+    <label>Bitot's Spot:</label>
+    <input type="" name="weight" required>
+
+    <label>Goitre:</label>
+    <input type="" name="weight" required>
+
+  <label>Pitting Oedema:</label>
+    <input type="" name="weight" required>
+   <input type="submit" value="submit" width="320px">
+
+ </form>
+<div class="section-title">
+<p>Your Diet Habit:</p>
+ </div>
+<form>
+    <label>Breakfast:</label>
+    <input type="text" name="height" required>
+
+    <label>Lunch:</label>
+    <input type="" name="weight" required>
+
+    <label>Snack:</label>
+    <input type="" name="weight" required>
+
+  <label>Dinner:</label>
+    <input type="" name="weight" required>
+   <input type="submit" value="submit" width="320px">
+
+ </form>
+
+
+<script>
+export default {
+  data() {
+    return {
+      email: '',
+      password: '',
+      role: 'developer',
+    }
+  }
+}
+</script>
+
+<style>
+  form {
+    max-width: 720px;
+    margin: 30px auto;
+    background: white;
+    text-align: left;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  label {
+    color: #aaa;
+    display: inline-block;
+    margin: 25px 0 15px;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  input, select {
+    display: block;
+    padding: 10px 6px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+  }
+
+</style>
+{% endblock content %}

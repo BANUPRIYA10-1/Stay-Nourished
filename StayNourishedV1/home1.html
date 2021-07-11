@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+<body>
+{% csrf_token %}
+<!-- ======= Hero Section ======= -->
+ <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-left" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Stay<span> Nourshied</span></h1>
+          <h2>Don't eat less eat right</h2>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+<section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="assets/img/bg3.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>Health is not about the weight you lose.But the life that you gain.</h3>
+              <br><br>
+            <p class="font-italic">
+              Nutrients provide nourishment. Proteins, carbohydrates, fat, vitamins, minerals, fiber, and water are all nutrients.
+                If you do not have the right balance of nutrients in your diet, there is a risk of developing certain health conditions issues.
+                Stay Nourished will help in finding the right nutrients that are required for your body by following standard nutritional analysis methods.And you can know more about you foods and its impact on your body.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About-->
+
+
+
+{% endblock content %}
